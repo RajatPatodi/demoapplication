@@ -1,0 +1,35 @@
+.warpper{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.search{
+    width:100%;
+    text-align: center;
+    margin: 100px;
+}
+
+.search input{
+    width: 70%;
+    height: 40px;
+}
+
+
+.table-div{
+    width: 100%;
+    position: relative;
+}
+
+.table-div table{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+
+table>thead>tr>th,table>tbody>tr>td{
+    text-align: center!important;
+}

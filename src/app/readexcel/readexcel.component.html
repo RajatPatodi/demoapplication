@@ -1,0 +1,40 @@
+<div class="warpper">
+    <div style="text-align: center;margin-bottom: 30px;">
+        <h1>This is a Demo Application</h1>
+    </div>
+    <div style="text-align: center;">
+        <h4>Myself Rajat Patodi a first Year Student at IIT Guwahati</h4>
+        <ul style="list-style: none">
+            <li>Roll No. : <b>210122042</b></li>
+            <li>Branch : <b>Chemical Science And Technology</b></li>
+        </ul>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Type Item Name to Search...(tv,watch etc)" (keyup)="searchData($event)" />
+    </div>
+
+    <div class="table-div col-md-12">
+        <table class="table table-striped" *ngIf="filteredArr.length>0">
+            <thead>
+                <tr>
+                    <th>Sr.No.</th>
+                    <th> Item Code</th>
+                    <th>Item Name</th>
+                    <th>Item Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let d of filteredArr;index as i">
+                    <td>{{i+1}}</td>
+                    <td>{{d.ITEM_CODE}}</td>
+                    <td>{{d.ITEM_NAME}}</td>
+                    <td>{{d.ITEM_DESC}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div *ngIf="showErr" style="width: 100%;text-align:center;">
+            <h4 style="color:red">No Item Found</h4>
+        </div>
+    </div>
+</div>
