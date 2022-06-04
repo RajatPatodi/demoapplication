@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import * as XLSX from 'xlsx';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-readexcel',
@@ -20,7 +21,7 @@ export class ReadexcelComponent implements OnInit {
 
   dataJson1:any;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router:Router) { }
 
   ngOnInit(): void {
     
@@ -71,4 +72,11 @@ export class ReadexcelComponent implements OnInit {
     }
   }
 
+  openAbout(){
+    this.router.navigate(['/about-me'])
+  }
+
 }
+
+// rajatpatodi02@gmail.com
+// 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

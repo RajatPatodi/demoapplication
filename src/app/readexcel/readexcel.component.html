@@ -1,14 +1,16 @@
 <div class="warpper">
-    <div style="text-align: center;margin-bottom: 30px;">
-        <h1>This is a Demo Application</h1>
+    <div style="text-align: right;margin-bottom: 30px;">
+        <!-- <h1>This is a Demo Application</h1> -->
+        <button class="btn btn-primary btn-lg" style="margin-right: 20px;
+        margin-top: 20px;" (click)="openAbout()">About Me</button>
     </div>
-    <div style="text-align: center;">
+    <!-- <div style="text-align: center;">
         <h4>Myself Rajat Patodi a first Year Student at IIT Guwahati</h4>
         <ul style="list-style: none">
             <li>Roll No. : <b>210122042</b></li>
             <li>Branch : <b>Chemical Science And Technology</b></li>
         </ul>
-    </div>
+    </div> -->
     <div class="search">
         <input type="text" placeholder="Type Item Name to Search...(tv,watch etc)" (keyup)="searchData($event)" />
     </div>
